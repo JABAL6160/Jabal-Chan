@@ -1,31 +1,36 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Data Anggota</title> 
-        <script src="alert form.js"></script>
-        </head>
-        <body>
-            <h2>Input Data Anggota</h2>
-            <form method='post' action='' name='formdaftar'>
-                <h4>Silahkan Input Data Anda</h4>
-                <tr>
-                <td width=50>Nama </td> <input type='text' name='Nama'> <br>
-                </tr>
-                <endl> <br>
-                    <tr>
-                        <td width=50>ID Anggota </td> <input type='text' name='ID'> <br>
-                        </tr>
-                        <endl> <br>
-                Alamat<textarea name='Alamat' cols='100' rows='5'> </textarea> <br>
-                <endl> <br>
-                Jenis Kelamin<input type='radio' name='jenkel'value='P'>Pria &nbsp;&nbsp;
-                <endl> <br>
-                <input type='radio' name='jenkel' value='W'>Wanita &nbsp;&nbsp;
-                <br>
-                <input type='submit' name='tblSimpan' value='Save'>
-                <endl> <br>
-                <endl> <br>
-                <endl> <br>
-                <a href='Menu.html'>Beranda</a>
-                <script src="Alert.js"></script>
-            </form></body><html>
+<head>
+	<title>Form Data Anggota</title>
+	<style> 
+	body{background-color:rgb(0, 0, 0);}
+	h1{color:rgb(178, 99, 176);text-align:center;}
+	</style>
+    <script src="alet.js"></script>
+</head>
+<body>
+	<h1><p style='color:rgb(0, 0, 0);background-color:rgb(194, 120, 196);'>Data Anggota</p></h1>
+	<form method="post" action=" " name="formdaftar" onsubmit="return cekform()">
+		<label for="nama" style='color:white'>Nama:</label>
+		<input type="text" id="txtnama" name="Nama"><br>
+
+		<label for="id" style='color:white'>ID Anggota:</label>
+		<input type="text" id="ID" name="ID"><br>
+
+		<label for="alamat" style='color:white'>Alamat:</label>
+		<input type="text" id="txtalamat" name="alamat"><br>
+        
+        <p style='color:white'>Jenis Kelamin:</p>
+        <input type="radio" id="jenkel" name="jenis-kelamin" value="pria">
+        <label for="pria" style='color:white'>Pria</label><br>
+        <input type="radio" id="jenkel" name="jenis-kelamin" value="wanita">
+        <label for="wanita" style='color:white'>Wanita</label><br>
+
+        <endl> <br>
+		<input type="submit" name='tblSimpan' style='color:rgb(0, 0, 0)' value="Submit">
+		<endl> <br>
+			<endl> <br>
+		<a href='Menu.html' style='color:rgb(255, 255, 255)' >Beranda</a>
+	</form>
+</body>
+</html>
